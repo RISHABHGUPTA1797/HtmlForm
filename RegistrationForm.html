@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Book a Call</h1>
+            <h6>Book a call slot, and our representative will call you within an hour of the selected slot.</h6>
+        </div>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <div class="time-for-call">
+                <label for="callDateTime">Time for Call:</label>
+                <div class="call-date-time">
+                    <input type="date" id="callDate" name="callDate" required>
+                    <input type="time" id="callTime" name="callTime" required>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
